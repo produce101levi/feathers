@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Usuario</title>
+</head>
+<body>
+  <h1>Editar Usuario</h1>
+  <form action="/usuarios/edit/<%= usuario._id %>" method="POST">
+    <p>IDUsuario: <input type="text" name="IDUsuario" value="<%= usuario.IDUsuario %>" /></p>
+    <p>Email: <input type="email" name="Email" value="<%= usuario.Email %>" required /></p>
+    <p>Nombre: <input type="text" name="Nombre" value="<%= usuario.Nombre %>" /></p>
+    <p>FirebaseUID: <input type="text" name="FirebaseUID" value="<%= usuario.FirebaseUID %>" /></p>
+    <button type="submit">Actualizar</button>
+  </form>
+</body>
+</html>

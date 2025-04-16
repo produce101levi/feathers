@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crear Usuario</title>
+</head>
+<body>
+  <h1>Crear Usuario</h1>
+    <form id="crear_usuario_form" action="/usuarios/create" method="POST">
+      <p>IDUsuario: <input type="text" name="IDUsuario" id="IDUsuario" /></p>
+      <p>Email: <input type="email" name="Email" id="email" required /></p>
+      <p>Nombre: <input type="text" name="Nombre" id="nombre" /></p>
+      <p>FirebaseUID: <input type="text" name="FirebaseUID" id="FirebaseUID" /></p>
+      <button type="submit">Guardar</button>
+  </form>
+</body>
+</html>

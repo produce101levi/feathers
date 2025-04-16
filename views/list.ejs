@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Usuarios</title>
+</head>
+<body>
+  <h1>Usuarios</h1>
+  <a href="/usuarios/create">Crear nuevo usuario</a>
+  <ul>
+    <% usuarios.forEach(usuario => { %>
+      <li>
+        <strong><%= usuario.Nombre %></strong> (<%= usuario.Email %>)
+        | <a href="/usuarios/edit/<%= usuario._id %>">Editar</a>
+        | <a href="/usuarios/delete/<%= usuario._id %>">Eliminar</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
